@@ -26,11 +26,7 @@ public class Main {
         produto2.setMarca("MEU MOVEL");
         produto2.setProduto("Mesa de Jantar");
         produto2.setDescricao("Mesa de Jantar para 6 pessoas, com 6 cadeiras");
-        produto2.setModelo("MD2026CS");
-        produto2.setPreco(890.90);
-        produto2.setClassificacaoConsumo("B");
-        produto2.setVoltagem();
-        produto2.setCor();
+        produto2.setCor("Naranja");
 
 
 
