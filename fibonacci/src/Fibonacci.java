@@ -1,15 +1,12 @@
-import java.util.Scanner;
-
 public class Fibonacci {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite um número para criar uma proporção áurea a partir dele: ");
-        int Num1 = scanner.nextInt();
+        System.out.println("---- Proporção áurea (Fibonacci) ----");
 
-        int anterior = Num1;
-        int atual = Num1;
+        int anterior = 1;
+        int atual = 1;
+
 
         for (int i = 0; i < 10; i++) {
 
@@ -20,8 +17,6 @@ public class Fibonacci {
             anterior = atual;
             atual = proximo;
         }
-
-        scanner.close();
 
     }
 }
