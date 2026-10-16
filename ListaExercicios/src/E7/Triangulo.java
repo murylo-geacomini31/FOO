@@ -1,6 +1,6 @@
 package E7;
 
-public class Triangulo extends FormaGeometrica {
+public class Triangulo implements FormaGeometrica {
 
     double lado;
     double base;

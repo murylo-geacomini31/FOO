@@ -1,6 +1,6 @@
 package E7;
 
-public class Circulo extends FormaGeometrica {
+public class Circulo implements FormaGeometrica {
 
     double raio;
 

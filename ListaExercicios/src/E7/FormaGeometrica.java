@@ -1,12 +1,8 @@
 package E7;
 
-public class FormaGeometrica {
+public interface FormaGeometrica {
 
-    public double calcularPerimetro() {
-        return 0;
-    }
+    public double calcularPerimetro();
 
-    public double calcularArea() {
-        return 0;
-    }
+    public double calcularArea();
 }

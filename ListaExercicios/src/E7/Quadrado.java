@@ -1,6 +1,6 @@
 package E7;
 
-public class Quadrado extends FormaGeometrica {
+public class Quadrado implements FormaGeometrica {
 
     double lado;
 
