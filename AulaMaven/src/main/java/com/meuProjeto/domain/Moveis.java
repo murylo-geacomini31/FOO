@@ -11,8 +11,8 @@ public class Moveis extends Produto {
     public Moveis() {
     }
 
-    public Moveis(String marca, String nome, String modelo, int quantidade, String descricacao, LocalDate dataCriacao, String criadoPor, String composicao, String materiais, int qtdItens) {
-        super(marca, nome, modelo, quantidade, descricacao, dataCriacao, criadoPor);
+    public Moveis(String marca, String nome, String modelo, int quantidade, String descricacao, String composicao, String materiais, int qtdItens) {
+        super(marca, nome, modelo, quantidade, descricacao);
         this.composicao = composicao;
         this.materiais = materiais;
         this.qtdItens = qtdItens;

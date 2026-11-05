@@ -6,32 +6,42 @@ import com.meuProjeto.interfaces.Crud;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClienteDao implements Crud {
+public class ClienteDao implements Crud<Cliente> {
 
     private List<Cliente> listaClientes = new ArrayList<>();
 
-    @Override
-    public void salvar() {
 
+    @Override
+    public void salvar(Cliente objeto) {
+        this.listaClientes.add(objeto);
     }
 
     @Override
-    public void listar() {
-
+    public List<Cliente> listar() {
+        return this.listaClientes;
     }
 
     @Override
-    public void buscar() {
-
+    public Cliente buscar(int indice) {
+        if (indice < 0 || indice >= this.listaClientes.size()) {
+            return null;
+        }
+        return this.listaClientes.get(indice);
     }
 
     @Override
-    public void atualizar() {
-
+    public void atualizar(int indice, Cliente objeto) {
+        if (indice < 0 || indice >= this.listaClientes.size()) {
+            return;
+        }
+        this.listaClientes.set(indice, objeto);
     }
 
     @Override
-    public void deletar() {
-
+    public void deletar(int indice) {
+        if (indice < 0 || indice >= this.listaClientes.size()) {
+            return;
+        }
+        this.listaClientes.remove(indice);
     }
 }

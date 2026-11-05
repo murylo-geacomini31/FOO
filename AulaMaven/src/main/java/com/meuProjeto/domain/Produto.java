@@ -15,14 +15,12 @@ public abstract class Produto {
     public Produto() {
     }
 
-    public Produto(String marca, String nome, String modelo, int quantidade, String descricacao, LocalDate dataCriacao, String criadoPor) {
+    public Produto(String marca, String nome, String modelo, int quantidade, String descricacao) {
         this.marca = marca;
         this.nome = nome;
         this.modelo = modelo;
         this.quantidade = quantidade;
         this.descricacao = descricacao;
-        this.dataCriacao = dataCriacao;
-        this.criadoPor = criadoPor;
     }
 
     public String getMarca() {

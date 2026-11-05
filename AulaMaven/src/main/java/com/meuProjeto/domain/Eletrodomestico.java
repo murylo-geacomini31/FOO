@@ -2,17 +2,17 @@ package com.meuProjeto.domain;
 
 import java.time.LocalDate;
 
-public class Eletrodomestrico extends Produto {
+public class Eletrodomestico extends Produto {
 
     private int voltagem;
     private int potencial;
     private String especificacoes;
 
-    public Eletrodomestrico() {
+    public Eletrodomestico() {
     }
 
-    public Eletrodomestrico(String marca, String nome, String modelo, int quantidade, String descricacao, LocalDate dataCriacao, String criadoPor, int voltagem, int potencial, String especificacoes) {
-        super(marca, nome, modelo, quantidade, descricacao, dataCriacao, criadoPor);
+    public Eletrodomestico(String marca, String nome, String modelo, int quantidade, String descricacao, int voltagem, int potencial, String especificacoes) {
+        super(marca, nome, modelo, quantidade, descricacao);
         this.voltagem = voltagem;
         this.potencial = potencial;
         this.especificacoes = especificacoes;
